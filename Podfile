@@ -6,5 +6,5 @@ target 'googleSR' do
   use_frameworks!
 
   # Pods for googleSR
- pod 'googleapis', :path => './googleSR'
+ pod 'googleapis', :path => '.'
 end

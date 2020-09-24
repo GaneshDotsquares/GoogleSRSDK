@@ -14,9 +14,11 @@
 		1F3C6CD9251C675600220136 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C6CD4251C675600220136 /* SpeechRecognitionService.swift */; };
 		1F3C6CDA251C675600220136 /* Dashboard+GoogleSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C6CD5251C675600220136 /* Dashboard+GoogleSpeech.swift */; };
 		1F3C6CDC251C676100220136 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C6CDB251C676100220136 /* TestHelper.swift */; };
+		777711B89EFBA7CF13E0B685 /* Pods_googleSR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2CD8CC0A4BB68B52FB3C33 /* Pods_googleSR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01DEA75FFD8CBB7602A74EF1 /* Pods-googleSR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-googleSR.release.xcconfig"; path = "Target Support Files/Pods-googleSR/Pods-googleSR.release.xcconfig"; sourceTree = "<group>"; };
 		1F3C6CC5251C672400220136 /* googleSR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = googleSR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3C6CC8251C672400220136 /* googleSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = googleSR.h; sourceTree = "<group>"; };
 		1F3C6CC9251C672400220136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		1F3C6CD4251C675600220136 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
 		1F3C6CD5251C675600220136 /* Dashboard+GoogleSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dashboard+GoogleSpeech.swift"; sourceTree = "<group>"; };
 		1F3C6CDB251C676100220136 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		3E2CD8CC0A4BB68B52FB3C33 /* Pods_googleSR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_googleSR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFCE2D37C0188D27F237146 /* Pods-googleSR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-googleSR.debug.xcconfig"; path = "Target Support Files/Pods-googleSR/Pods-googleSR.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777711B89EFBA7CF13E0B685 /* Pods_googleSR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1F3C6CC7251C672400220136 /* googleSR */,
 				1F3C6CC6251C672400220136 /* Products */,
+				DDEABE7637CE77514D551CF5 /* Pods */,
+				E7758987DA96AB202A8F79E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,24 @@
 			path = GoogleFolder;
 			sourceTree = "<group>";
 		};
+		DDEABE7637CE77514D551CF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCFCE2D37C0188D27F237146 /* Pods-googleSR.debug.xcconfig */,
+				01DEA75FFD8CBB7602A74EF1 /* Pods-googleSR.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7758987DA96AB202A8F79E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E2CD8CC0A4BB68B52FB3C33 /* Pods_googleSR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -96,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3C6CCD251C672400220136 /* Build configuration list for PBXNativeTarget "googleSR" */;
 			buildPhases = (
+				9B4C1030BB4E5F04ECD353B8 /* [CP] Check Pods Manifest.lock */,
 				1F3C6CC0251C672400220136 /* Headers */,
 				1F3C6CC1251C672400220136 /* Sources */,
 				1F3C6CC2251C672400220136 /* Frameworks */,
@@ -152,6 +178,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B4C1030BB4E5F04ECD353B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-googleSR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F3C6CC1251C672400220136 /* Sources */ = {
@@ -291,6 +342,7 @@
 		};
 		1F3C6CCE251C672400220136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFCE2D37C0188D27F237146 /* Pods-googleSR.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -314,6 +366,7 @@
 		};
 		1F3C6CCF251C672400220136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DEA75FFD8CBB7602A74EF1 /* Pods-googleSR.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
